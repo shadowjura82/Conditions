@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
 
     public static void task1() {
@@ -44,5 +45,17 @@ public class Main {
         } else if (humanAge >= 24) {
             System.out.println("Если возраст человека равен " + humanAge + ", то ему нужно ходить на работу\n");
         } else System.out.println("Если возраст человека равен " + humanAge + ", то ему нужно посидеть дома\n");
+    }
+
+    public static void task5() {
+        short childAge = 15;
+        boolean isAdultAvailable = true;
+        if (childAge < 5) {
+            System.out.println("Если возраст ребенка равен " + childAge + ", то ему нельзя кататься на аттракционе\n");
+        } else if (childAge >= 5 && childAge < 14 && isAdultAvailable) {
+            System.out.println("Если возраст ребенка равен " + childAge + ", то ему можно кататься на аттракционе в сопровождении взрослого\n");
+        } else if (childAge >= 14) {
+            System.out.println("Если возраст ребенка равен " + childAge + ", то ему можно кататься на аттракционе без сопровождения взрослого\n");
+        } else System.out.println("У ребенка нет сопровождения. К сожалению он не может кататься\n");
     }
 }
